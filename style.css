@@ -7,13 +7,15 @@
     padding: 1em;
     max-width: 20vw;
 }
-
 .availability{
     padding: 1em;
     max-width: 30vw;
 }
-
 .working_hours{
     padding: 1em;
     max-width: 30vw;
+}
+input {
+    border: 1px solid black;
+    padding: 5px;
 }
