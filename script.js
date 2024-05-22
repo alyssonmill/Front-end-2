@@ -6,8 +6,22 @@
 //     event.target.style.bordercolor = "white";
 // }
 
-const focuz = document.getElementById("user_name")
+let inputs =  document.querySelectorAll("input");
 
-focuz.addEventListener("focus", (event) => {
-    event.target.style.borderColor = "purple";
+inputs.forEach((inputs) => {
+    inputs.addEventListener("focus", (event) => {
+        event.target.style.border = "";
+        event.target.style.border = "3px solid purple";
+    });
+    
+    inputs.addEventListener("blur", (event) => {
+        event.target.style.border = "";
+        console.log(inputs.value)
+    });
 });
+
+
+
+
+
+
