@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+}
+.personal{
+    padding: 1em;
+    max-width: 20vw;
+}
+
+.availability{
+    padding: 1em;
+    max-width: 30vw;
+}
+
+.working_hours{
+    padding: 1em;
+    max-width: 30vw;
+}
