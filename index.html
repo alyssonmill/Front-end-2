@@ -10,6 +10,7 @@
 
 <body>
     <form action="api.flit.com.br/submeterDados" method="post" id="form">
+
         <fieldset class="personal">
             <legend>Personal Details</legend>
             <label for="user_name">Name:</label>
@@ -19,24 +20,24 @@
             <input id="user_address" type="text" name="address">
         </fieldset>
 
-        <fieldset class="availability">
+        <fieldset id="availability">
             <legend>Availability</legend>
             <label>Days opened:</label>
             <br>
             <label for="monday">Monday</label>
-            <input id="monday" type="radio">
+            <input name="availability" id="monday" type="radio" value="monday">
             <br>
             <label for="tuesday">Tuesday</label>
-            <input id="tuesday" type="radio">
+            <input name="availability" id="tuesday" type="radio" value="tuesday">
             <br>
             <label for="wednesday">Wednesday</label>
-            <input id="wednesday" type="radio">
+            <input name="availability" id="wednesday" type="radio">
             <br>
             <label for="thursday">Thursday</label>
-            <input id="thursday" type="radio">
+            <input name="availability" id="thursday" type="radio">
             <br>
             <label for="friday">Friday</label>
-            <input id="friday" type="radio">
+            <input name="availability" id="friday" type="radio">
         </fieldset>
 
         <fieldset class="working_hours">
