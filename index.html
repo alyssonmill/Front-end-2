@@ -9,47 +9,49 @@
 </head>
 
 <body>
-    <form action="api.flit.com.br/submeterDados" method="post" id="form">
-
+    <!-- <form action="api.flit.com.br/submeterDados" method="post" id="form"> -->
+    <form id="form">
         <fieldset class="personal">
-            <legend>Personal Details</legend>
-            <label for="user_name">Name:</label>
-            <input id="user_name" type="text" name="name">
-            <br>
-            <label for="user_address">Address:</label>
-            <input id="user_address" type="text" name="address">
+                <legend>Personal Details</legend>
+                <label for="user_name">Name:</label>
+                <input id="user_name" type="text" name="Name">
+                <br>
+                <label for="user_address">Address:</label>
+                <input id="user_address" type="text" name="Address">
         </fieldset>
-
+        <br>
+        <br>
         <fieldset id="availability">
             <legend>Availability</legend>
             <label>Days opened:</label>
             <br>
             <label for="monday">Monday</label>
-            <input name="availability" id="monday" type="radio" value="monday">
+            <input name="Monday" id="monday" type="checkbox" value="monday">
             <br>
             <label for="tuesday">Tuesday</label>
-            <input name="availability" id="tuesday" type="radio" value="tuesday">
+            <input name="Tuesday" id="tuesday" type="checkbox" value="tuesday">
             <br>
-            <label for="wednesday">Wednesday</label>
-            <input name="availability" id="wednesday" type="radio">
+            <label id="wednesday" for="wednesday">Wednesday</label>
+            <input name="Wednesday" id="wednesday" type="checkbox" value="wednesday">
             <br>
-            <label for="thursday">Thursday</label>
-            <input name="availability" id="thursday" type="radio">
+            <label id="thursday" for="thursday">Thursday</label>
+            <input name="Thursday" id="thursday" type="checkbox" value="thursday">
             <br>
             <label for="friday">Friday</label>
-            <input name="availability" id="friday" type="radio">
+            <input name="Friday" id="friday" type="checkbox" value="friday">
         </fieldset>
-
+        <br>
+        <br>
         <fieldset class="working_hours">
             <legend>Working Hours</legend>
             <label for="open_time">Open:</label>
-            <input id="open_time" type="time" name="open_time" required>
+            <input id="open_time" type="time" name="Open time" required>
             <br>
             <label for="close_time">Close:</label>
-            <input id="close_time" type="time" name="close_time" required>
+            <input id="close_time" type="time" name="Close time" required>
         </fieldset>
-
-        <input type="submit" value="Send Request"/>
+        <br>
+        <input style="float: left;" type="submit" value="Send Request" />
     </form>
     <script src="script.js"></script>
 </body>
