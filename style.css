@@ -1,21 +1,47 @@
 *{
     padding: 0;
     margin: 0;
-    font-size: 1.1em;
+    font-size: 25px;
 }
-.personal{
-    padding: 1em;
-    max-width: 20vw;
+
+#form{
+    width: 50vw;
 }
-.availability{
-    padding: 1em;
-    max-width: 30vw;
+
+fieldset {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
-.working_hours{
-    padding: 1em;
-    max-width: 30vw;
+
+fieldset label, fieldset input {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(33.33% - 10px);
 }
-input {
-    border: 1px solid black;
-    padding: 5px;
+fieldset input[type="checkbox"] {
+    width: auto;
+}
+
+/* @media (max-width: 800px) {
+    fieldset label, fieldset input {
+        width: 1000vw;
+        width: calc(33.33% - 10px);
+        display: inline-block;
+        margin: 5px;
+    }
+} */
+
+
+@media only screen and (max-width: 800px){
+    #form{
+        width: 100vw;
+    }
+
+    fieldset label, fieldset input {
+        width: calc(33.33% - 10px);
+        display: inline-block;
+        margin: 5px;
+    }
 }
